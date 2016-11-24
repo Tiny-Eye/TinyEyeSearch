@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="large_text_size">16sp</dimen>
+    <dimen name="appbar_default_elevation">4dp</dimen>
+    <dimen name="appbar_layout_dimension">260dp</dimen>
+    <dimen name="status_bar_dimension">24dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+</resources>

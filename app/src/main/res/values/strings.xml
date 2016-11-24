@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TinyEye</string>
+    <string name="action_settings">Credits</string>
+    <string name="image_details_header">Details:</string>
+    <string name="image_preview_header">Preview:</string>
+    <string name="loading_message">Uploading image. Please wait.</string>
+
+    <string name="dialog_select_prompt">Choose a picture</string>
+    <string name="dialog_select_camera">Camera</string>
+    <string name="dialog_select_gallery">Gallery</string>
+
+    <string name="image_picker_error">Something is wrong with that image. Pick a different one please.</string>
+
+    <string name="ocr_search">Text Recognition</string>
+    <string name="other_searches">Image Recognition</string>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Ocr Detector</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+
+    <string name="API_KEY"></string>
+    <string name="text_reco_background">Background image for text reco button</string>
+    <string name="image_reco_background">Image for backgroung og button</string>
+    <string name="image_to_process">user input image to process</string>
+    <string name="CACHE">/sdcard/Android/data/gurpreetsk.me.tinyeye/cache/</string>
+
+</resources>
