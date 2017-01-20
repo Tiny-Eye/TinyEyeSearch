@@ -4,8 +4,8 @@ TinyEye is a context-less, real-time, insightful android application which can b
 
 ## Setup instructions
 
-Place the Vision API key in strings.xml and /cloudvision/utils/VisionKey.java files and run the application.
-Also add fabric API key in AndroidManifest.xml for crash reporting, or remove its dependencies.
+Place your Vision API key in strings.xml and /cloudvision/utils/VisionKey.java files and run the application.
+Also, add fabric API key in AndroidManifest.xml for crash reporting, or remove its dependencies.
 
 ##Other links
 
