@@ -1,4 +1,4 @@
-#TinyEye Search
+# TinyEye Search
 
 TinyEye is a context-less, real-time, insightful android application which can be used for getting information from anonymous text and images. 
 
@@ -7,7 +7,7 @@ TinyEye is a context-less, real-time, insightful android application which can b
 Place your Vision API key in strings.xml and /cloudvision/utils/VisionKey.java files and run the application.
 Also, add fabric API key in AndroidManifest.xml for crash reporting, or remove its dependencies.
 
-##Other links
+## Other links
 
 Presentation PDF: https://goo.gl/JLVD8g
 
