@@ -67,7 +67,7 @@ public class FeedbackActivity extends AppCompatActivity {
 
     private void sendToDatabase(String userName, String userContact, String userFeedback) {
 
-        FirebaseModel user = new FirebaseModel(userName, userContact, userFeedback);
+        User user = User.create(userName, userContact, userFeedback);
         mDatabase.child("feedback").push().setValue(user);
 
     }
