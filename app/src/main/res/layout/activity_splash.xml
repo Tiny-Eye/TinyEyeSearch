@@ -35,7 +35,7 @@
             android:alpha="0.4"/>
 
         <Button
-            android:id="@+id/button_ocr_search"
+            android:id="@+id/recogniseTextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
@@ -68,7 +68,7 @@
             android:alpha="0.4"/>
 
         <Button
-            android:id="@+id/button_other_search"
+            android:id="@+id/recogniseImageButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
