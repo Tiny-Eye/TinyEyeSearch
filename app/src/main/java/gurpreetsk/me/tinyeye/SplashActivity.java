@@ -13,13 +13,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.crashlytics.android.Crashlytics;
-
 import java.io.File;
 
 import gurpreetsk.me.tinyeye.cloudvision.activities.MainActivity;
 import gurpreetsk.me.tinyeye.ocr.OcrCaptureActivity;
-import io.fabric.sdk.android.Fabric;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -29,8 +26,6 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
-        Fabric.with(this, new Crashlytics());
 
         TextView Button_OCR_search = (TextView) findViewById(R.id.button_ocr_search);
         TextView Button_other_search = (TextView) findViewById(R.id.button_other_search);
