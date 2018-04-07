@@ -1,104 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="gurpreetsk.me.tinyeye">
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="gurpreetsk.me.tinyeye"
+  >
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission
+    android:name="android.permission.INTERNET"
+    />
+  <uses-permission
+    android:name="android.permission.ACCESS_NETWORK_STATE"
+    />
+  <uses-permission
+    android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    />
+  <uses-permission
+    android:name="android.permission.CAMERA"
+    />
+  <uses-permission
+    android:name="android.permission.VIBRATE"
+    />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:screenOrientation="portrait"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".SplashActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:screenOrientation="portrait"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    >
+    <activity
+      android:name=".SplashActivity"
+      android:label="@string/app_name"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.NoActionBar"
+      >
+      <intent-filter>
+        <action
+          android:name="android.intent.action.MAIN"
+          />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".cloudvision.activities.MainActivity"
-            android:label="@string/app_name"
-            android:parentActivityName=".SplashActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SplashActivity" />
-        </activity>
-        <activity
-            android:name=".cloudvision.activities.DataActivity"
-            android:parentActivityName=".cloudvision.activities.MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".cloudvision.activities.MainActivity" />
-        </activity>
-        <activity
-            android:name=".cloudvision.activities.DetailActivity"
-            android:parentActivityName=".cloudvision.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".cloudvision.activities.MainActivity" />
-        </activity>
+        <category
+          android:name="android.intent.category.LAUNCHER"
+          />
+      </intent-filter>
+    </activity>
+    <activity
+      android:name=".cloudvision.activities.MainActivity"
+      android:label="@string/app_name"
+      android:parentActivityName=".SplashActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.NoActionBar"
+      >
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".SplashActivity"
+        />
+    </activity>
+    <activity
+      android:name=".cloudvision.activities.DataActivity"
+      android:parentActivityName=".cloudvision.activities.MainActivity"
+      >
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".cloudvision.activities.MainActivity"
+        />
+    </activity>
+    <activity
+      android:name=".cloudvision.activities.DetailActivity"
+      android:parentActivityName=".cloudvision.activities.MainActivity"
+      android:theme="@style/AppTheme.NoActionBar"
+      >
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".cloudvision.activities.MainActivity"
+        />
+    </activity>
+    <meta-data
+      android:name="com.google.android.gms.vision.DEPENDENCIES"
+      android:value="ocr"
+      />
 
-        <meta-data
-            android:name="com.google.android.gms.vision.DEPENDENCIES"
-            android:value="ocr" />
+    <activity
+      android:name=".ocr.OcrCaptureActivity"
+      android:label="Read Text"
+      android:parentActivityName=".SplashActivity"
+      android:theme="@style/AppTheme.NoActionBar"
+      >
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".SplashActivity"
+        />
+    </activity>
+    <activity
+      android:name=".ocr.UI.activities.OCRMainActivity"
+      android:parentActivityName=".ocr.OcrCaptureActivity"
+      >
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".ocr.OcrCaptureActivity"
+        />
+    </activity>
 
-        <activity
-            android:name=".ocr.OcrCaptureActivity"
-            android:label="Read Text"
-            android:parentActivityName=".SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SplashActivity" />
-        </activity>
-        <activity
-            android:name=".ocr.UI.activities.OCRMainActivity"
-            android:parentActivityName=".ocr.OcrCaptureActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ocr.OcrCaptureActivity" />
-        </activity>
+    <meta-data
+      android:name="com.google.android.gms.version"
+      android:value="@integer/google_play_services_version"
+      />
+    <meta-data
+      android:name="com.google.android.geo.API_KEY"
+      android:value="@string/API_KEY"
+      />
 
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/API_KEY" />
+    <provider
+      android:name="android.support.v4.content.FileProvider"
+      android:authorities="${applicationId}.provider"
+      android:exported="false"
+      android:grantUriPermissions="true"
+      >
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/provider_paths"
+        />
+    </provider>
 
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="${applicationId}.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
-        </provider>
+    <activity
+      android:name=".CreditsActivity"
+      android:theme="@style/AppTheme.NoActionBar"
+      />
+    <activity android:name=".FeedbackActivity"
+      />
 
-        <activity
-            android:name=".CreditsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".FeedbackActivity" />
-
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="" />
-
-    </application>
-
+    <meta-data
+      android:name="io.fabric.ApiKey"
+      android:value=""
+      />
+  </application>
 </manifest>
