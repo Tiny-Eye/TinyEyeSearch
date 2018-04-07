@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import gurpreetsk.me.tinyeye.CreditsActivity;
-import gurpreetsk.me.tinyeye.FeedbackActivity;
+import gurpreetsk.me.tinyeye.feedback.FeedbackActivity;
 import gurpreetsk.me.tinyeye.R;
 import gurpreetsk.me.tinyeye.cloudvision.utils.Constants;
 import gurpreetsk.me.tinyeye.ocr.UI.fragments.WebViewFragment;

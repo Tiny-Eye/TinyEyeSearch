@@ -20,7 +20,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,11 +37,9 @@ import com.google.api.services.vision.v1.model.Feature;
 import com.google.api.services.vision.v1.model.Image;
 import com.google.firebase.crash.FirebaseCrash;
 
-import gurpreetsk.me.tinyeye.BuildConfig;
 import gurpreetsk.me.tinyeye.CreditsActivity;
-import gurpreetsk.me.tinyeye.FeedbackActivity;
+import gurpreetsk.me.tinyeye.feedback.FeedbackActivity;
 import gurpreetsk.me.tinyeye.R;
-import gurpreetsk.me.tinyeye.cloudvision.adapter.ResponseAdapter;
 import gurpreetsk.me.tinyeye.cloudvision.utils.Constants;
 import gurpreetsk.me.tinyeye.cloudvision.utils.PermissionUtils;
 
@@ -51,7 +48,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 import static gurpreetsk.me.tinyeye.cloudvision.utils.VisionKey.CLOUD_VISION_API_KEY;
 

@@ -126,7 +126,7 @@
       android:name=".CreditsActivity"
       android:theme="@style/AppTheme.NoActionBar"
       />
-    <activity android:name=".FeedbackActivity"
+    <activity android:name=".feedback.FeedbackActivity"
       />
 
     <meta-data

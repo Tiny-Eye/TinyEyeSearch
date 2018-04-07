@@ -9,14 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import gurpreetsk.me.tinyeye.CreditsActivity;
-import gurpreetsk.me.tinyeye.FeedbackActivity;
+import gurpreetsk.me.tinyeye.feedback.FeedbackActivity;
 import gurpreetsk.me.tinyeye.R;
 import gurpreetsk.me.tinyeye.cloudvision.fragments.WikiFragment;
 import gurpreetsk.me.tinyeye.cloudvision.utils.Constants;

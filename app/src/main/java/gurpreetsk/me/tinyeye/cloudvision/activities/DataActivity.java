@@ -2,7 +2,6 @@ package gurpreetsk.me.tinyeye.cloudvision.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import gurpreetsk.me.tinyeye.CreditsActivity;
-import gurpreetsk.me.tinyeye.FeedbackActivity;
+import gurpreetsk.me.tinyeye.feedback.FeedbackActivity;
 import gurpreetsk.me.tinyeye.R;
 import gurpreetsk.me.tinyeye.cloudvision.adapter.ResponseAdapter;
 import gurpreetsk.me.tinyeye.cloudvision.utils.Constants;
