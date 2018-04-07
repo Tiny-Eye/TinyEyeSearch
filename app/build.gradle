@@ -27,6 +27,7 @@ repositories {
   mavenCentral()
 }
 
+//TODO(gs) 8/Apr/18 - Extract into `ext` block.
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
