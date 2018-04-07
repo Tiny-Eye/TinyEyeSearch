@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- TODO(gs)8/Apr/18 - Use ConstraintLayout. -->
-<LinearLayout
+<android.support.constraint.ConstraintLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/activity_splash"
   android:layout_width="match_parent"
@@ -11,75 +11,67 @@
   tools:context="gurpreetsk.me.tinyeye.SplashActivity"
   >
 
-  <FrameLayout
+  <ImageView
+    android:id="@+id/recogniseOcrButton"
     android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:text="@string/ocr_search"
-    >
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:foreground="@color/black_70"
+    android:background="@drawable/text_reco_background"
+    android:contentDescription="@string/text_reco_background"
+    android:gravity="center"
+    android:scaleType="fitXY"
+    app:layout_constraintBottom_toTopOf="@+id/recogniseImageButton"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/recogniseImageButton"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    />
 
-    <ImageView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_gravity="center"
-      android:background="@drawable/text_reco_background"
-      android:contentDescription="@string/text_reco_background"
-      android:gravity="center"
-      android:scaleType="fitXY"
-      />
-
-    <ImageView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:alpha="0.4"
-      android:background="@android:color/black"
-      />
-
-    <Button
-      android:id="@+id/recogniseTextButton"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:background="@android:color/transparent"
-      android:gravity="center"
-      android:text="@string/ocr_search"
-      android:textSize="20sp"
-      android:textStyle="bold"
-      />
-  </FrameLayout>
-
-  <FrameLayout
+  <TextView
     android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/transparent"
+    android:gravity="center"
     android:text="@string/ocr_search"
-    >
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/recogniseImageButton"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
 
-    <ImageView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_gravity="center"
-      android:background="@drawable/image_reco_background"
-      android:contentDescription="@string/image_reco_background"
-      android:gravity="center"
-      android:scaleType="fitCenter"
-      />
+  <ImageView
+    android:id="@+id/recogniseImageButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:foreground="@color/black_70"
+    android:background="@drawable/image_reco_background"
+    android:contentDescription="@string/image_reco_background"
+    android:gravity="center"
+    android:scaleType="fitCenter"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/recogniseOcrButton"
+    />
 
-    <ImageView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:alpha="0.4"
-      android:background="@android:color/black"
-      />
-
-    <Button
-      android:id="@+id/recogniseImageButton"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:background="@android:color/transparent"
-      android:gravity="center"
-      android:text="@string/other_searches"
-      android:textSize="20sp"
-      android:textStyle="bold"
-      />
-  </FrameLayout>
-</LinearLayout>
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:text="@string/other_searches"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/recogniseImageButton"
+    />
+</android.support.constraint.ConstraintLayout>
