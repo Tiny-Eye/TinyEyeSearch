@@ -32,6 +32,10 @@ kapt {
   generateStubs = true
 }
 
+androidExtensions {
+  experimental = true
+}
+
 repositories {
   maven { url "https://maven.fabric.io/public" }
   mavenCentral()
