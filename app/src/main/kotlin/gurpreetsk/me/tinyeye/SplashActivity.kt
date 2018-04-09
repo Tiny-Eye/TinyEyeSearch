@@ -1,10 +1,8 @@
 package gurpreetsk.me.tinyeye
 
 import android.content.Intent
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import com.jakewharton.rxbinding2.view.clicks
-import gurpreetsk.me.tinyeye.base.TinyActivity
+import gurpreetsk.me.tinyeye._base.TinyActivity
 import gurpreetsk.me.tinyeye.cloudvision.activities.MainActivity
 import gurpreetsk.me.tinyeye.ocr.OcrCaptureActivity
 import kotlinx.android.synthetic.main.activity_splash.recogniseOcrButton

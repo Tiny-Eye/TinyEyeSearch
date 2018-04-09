@@ -1,4 +1,4 @@
-package gurpreetsk.me.tinyeye.common
+package gurpreetsk.me.tinyeye._common
 
 import java.util.regex.Pattern
 

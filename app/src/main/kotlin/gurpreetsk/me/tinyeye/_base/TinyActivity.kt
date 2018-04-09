@@ -1,4 +1,4 @@
-package gurpreetsk.me.tinyeye.base
+package gurpreetsk.me.tinyeye._base
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
