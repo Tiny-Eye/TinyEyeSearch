@@ -2,25 +2,24 @@ package gurpreetsk.me.tinyeye.feedback
 
 import android.content.Context
 import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-
 import com.google.firebase.crash.FirebaseCrash
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.jakewharton.rxbinding2.view.clicks
 import gurpreetsk.me.tinyeye.R
+import gurpreetsk.me.tinyeye.base.TinyActivity
 import kotlinx.android.synthetic.main.activity_feedback.*
 
-class FeedbackActivity : AppCompatActivity() {
+class FeedbackActivity : TinyActivity(), FeedbackView {
   private val databaseReference: DatabaseReference by lazy { FirebaseDatabase.getInstance().reference }
+  private val presenter: FeedbackPresenter by lazy { FeedbackPresenterImpl(this) }
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_feedback)
+  override fun inflateLayout(): Int =
+      R.layout.activity_feedback
 
+  override fun bind() {
     try {
       val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
       submitFeedbackButton.clicks()
