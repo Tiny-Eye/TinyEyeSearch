@@ -3,13 +3,11 @@ package gurpreetsk.me.tinyeye._injection
 import android.content.Context
 import dagger.Component
 import gurpreetsk.me.tinyeye.TinyApplication
-import gurpreetsk.me.tinyeye._injection.modules.PresentersModule
 import gurpreetsk.me.tinyeye._injection.modules.TinyModule
 import gurpreetsk.me.tinyeye._storage.contracts.RemoteRepository
 
 @Component(modules = [
-  TinyModule::class,
-  PresentersModule::class
+  TinyModule::class
 ])
 interface TinyComponent {
   fun remoteRepository(): RemoteRepository
