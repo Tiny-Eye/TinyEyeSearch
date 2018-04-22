@@ -2,18 +2,15 @@ package gurpreetsk.me.tinyeye.feedback
 
 import android.support.design.widget.Snackbar
 import android.widget.Toast
-import com.google.firebase.crash.FirebaseCrash
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import com.jakewharton.rxbinding2.view.clicks
 import gurpreetsk.me.tinyeye.R
 import gurpreetsk.me.tinyeye._base.TinyActivity
-import gurpreetsk.me.tinyeye._storage.FirebaseRepository
+import gurpreetsk.me.tinyeye._injection.TinyComponent
 import gurpreetsk.me.tinyeye._storage.contracts.RemoteRepository
 import kotlinx.android.synthetic.main.activity_feedback.*
 
 class FeedbackActivity : TinyActivity(), FeedbackView {
-  private val remoteRepository: RemoteRepository by lazy { FirebaseRepository() }
+  private val remoteRepository: RemoteRepository by lazy { TinyComponent.obtain(this).remoteRepository() }
   private val presenter: FeedbackPresenter by lazy { FeedbackPresenterImpl(this, remoteRepository) }
 
   override fun inflateLayout(): Int =
